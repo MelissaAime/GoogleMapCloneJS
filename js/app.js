@@ -6,6 +6,11 @@ function iniciarMap(){
     
     var map = new google.maps.Map(document.getElementById('map'), options);
 
+    google.maps.event.addListener(map, 'click', 
+    function(event){
+        addMarker({coords: event.latLng});
+    });
+
     var markers = [
         {
             coords:{lat: -34.5956145, lng: -58.4431949},
