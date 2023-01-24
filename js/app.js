@@ -1,3 +1,5 @@
+let map;
+
 function iniciarMap(){
     var options ={
         zoom: 8,
